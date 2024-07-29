@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export default class NavComponent {
-
+  logoUrl:string = "../../assets/images/Jumia-Logo.png"
 }

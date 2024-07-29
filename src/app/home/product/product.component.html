@@ -1,37 +1,55 @@
 <div class="container my-5">
+
     <div class="row justify-content-between">
-        <div class="card text-bg-dark shadow-lg p-3 col-12 col-lg-3 text-center">
-            <i class="bi bi-pc-display display-1"></i>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-secondary">Go somewhere</a>
+
+        <div class="col-12 col-lg-3 card bg-dark text-white p-3">
+            <a href="#" target="_blank">
+                <img class="w-100" [src]="products[0].imageUrl" alt="">
+            </a>
+            <div class="card-body p-1">
+                <p class="card-text text-capitalize fs-6 text-truncate mb-1">{{products[0].title}}</p>
+                <h6 class="card-title mb-0">{{products[0].price}} EGP</h6>
+                <div class="d-flex align-items-center gap-3">
+                    <span
+                        [class]="products[0].onSale ? 'bg-warning text-uppercase mt-2 bg-gradient p-1 rounded-1' : 'd-none'">On
+                        Sale
+                        !</span>
+                </div>
             </div>
         </div>
 
-        <div class="card text-bg-dark shadow-lg p-3 col-12 col-lg-3 text-center">
-            <i class="bi bi-earbuds display-1"></i>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-secondary">Go somewhere</a>
+        <div class="col-12 col-lg-3 card bg-dark text-white p-3">
+            <a href="#" target="_blank">
+                <img class="w-100" [src]="products[1].imageUrl" alt="">
+            </a>
+            <div class="card-body p-1">
+                <p class="card-text text-capitalize fs-6 text-truncate mb-1">{{products[1].title}}</p>
+                <h6 class="card-title mb-0">{{products[1].price}} EGP</h6>
+                <div class="d-flex align-items-center gap-3">
+                    <span
+                        [class]="products[1].onSale ? 'bg-warning text-uppercase mt-2 bg-gradient p-1 rounded-1' : 'd-none'">On
+                        Sale
+                        !</span>
+                </div>
             </div>
         </div>
 
-        <div class="card text-bg-dark shadow-lg p-3 col-12 col-lg-3 text-center">
-            <i class="bi bi-tablet-fill display-1"></i>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-secondary">Go somewhere</a>
+        <div class="col-12 col-lg-3 card bg-dark text-white p-3">
+            <a href="#" target="_blank">
+                <img class="w-100" [src]="products[2].imageUrl" alt="">
+            </a>
+            <div class="card-body p-1">
+                <p class="card-text text-capitalize fs-6 text-truncate mb-1">{{products[2].title}}</p>
+                <h6 class="card-title mb-0">{{products[2].price}} EGP</h6>
+                <div class="d-flex align-items-center gap-3">
+                    <span
+                        [class]="products[2].onSale ? 'bg-warning text-uppercase mt-2 bg-gradient p-1 rounded-1' : 'd-none'">On
+                        Sale
+                        !</span>
+                </div>
             </div>
         </div>
+
     </div>
 
 </div>

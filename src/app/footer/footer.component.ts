@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export default class FooterComponent {
-
+  logoUrl: string = "../../assets/images/Jumia-Logo.png";
 }
