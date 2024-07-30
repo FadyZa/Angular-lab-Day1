@@ -1,0 +1,9 @@
+<div class="container">
+    <h2 class="text-uppercase my-4 bg-warning p-2 text-white fw-bold text-center">all products</h2>
+    <div class="row justify-content-between gap-3 pb-3">
+        @for (prod of products; track $index) {
+        <app-productCard [product]="prod"
+            class="col-12 col-md-3 card bg-dark text-white p-0 border-0 shadow position-relative"></app-productCard>
+        }
+    </div>
+</div>
